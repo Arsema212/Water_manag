@@ -1,0 +1,60 @@
+.provider-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.provider-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.provider-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.provider-card:hover {
+    transform: translateY(-2px);
+}
+
+.provider-info {
+    flex-grow: 1;
+}
+
+.provider-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.provider-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.order-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}

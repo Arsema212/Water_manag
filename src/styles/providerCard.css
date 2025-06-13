@@ -1,0 +1,43 @@
+/* ProviderCard.css */
+
+.provider-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.provider-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+}
+
+.provider-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.provider-card p {
+  margin: 0 0 12px;
+  color: #666;
+}
+
+.provider-card .certifications h4 {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.provider-card .certifications ul {
+  padding-left: 20px;
+  margin: 0;
+  color: #555;
+}
+
+.provider-card .certifications li {
+  margin-bottom: 4px;
+}

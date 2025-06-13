@@ -1,0 +1,183 @@
+.profile-view {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 3rem;
+  border: 3px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.default-photo {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 2rem;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.profile-info h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  color: #555;
+}
+
+.profile-info p {
+  margin: 0.3rem 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.edit-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.edit-button:hover {
+  background: #f8f8f8;
+  border-color: #ccc;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.detail-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.detail-section h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+}
+
+.detail-section p {
+  margin: 0.8rem 0;
+  line-height: 1.6;
+}
+
+.detail-section strong {
+  color: #444;
+  font-weight: 500;
+}
+
+.certifications h4,
+.service-areas h4 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.8rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.certifications ul,
+.service-areas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certifications li,
+.service-areas li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #eee;
+  display: flex;
+  align-items: center;
+}
+
+.certifications li:before,
+.service-areas li:before {
+  content: "•";
+  color: #999;
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+/* Luxury accent colors */
+.profile-header {
+  position: relative;
+}
+
+.profile-header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #f0e68c);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-photo {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+}

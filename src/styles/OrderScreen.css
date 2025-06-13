@@ -1,0 +1,179 @@
+/* Container for the whole screen */
+.order-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #334155;
+}
+
+/* Title of the screen */
+.order-screen > h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Provider info container */
+.provider-info {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f1f5f9;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.provider-info h3 {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.provider-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* Map container styles */
+.leaflet-container {
+  border-radius: 12px;
+  width: 100% !important;
+  max-width: 600px;
+  height: 400px !important;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Form styles */
+.order-form {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.form-group input.error {
+  border-color: #f87171;
+}
+
+/* Error message under inputs */
+.error-message {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* Price summary box */
+.price-summary {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: inset 0 0 5px #e2e8f0;
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 1.15rem;
+  text-align: right;
+}
+
+/* Submit button */
+.order-form button[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.order-form button[type="submit"]:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.order-form button[type="submit"]:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+.confirmation-screen {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.confirmation-details {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.confirmation-details p {
+  margin: 10px 0;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.confirmation-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.back-button {
+  background-color: #f44336;
+  color: white;
+}
