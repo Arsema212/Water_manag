@@ -34,6 +34,17 @@ function App() {
   ];
 
   useEffect(() => {
+    console.log('Provider login state:', isProviderLoggedIn);
+    console.log('Current provider:', currentProvider);
+    console.log('User type:', userType);
+    console.log('Is authenticated:', isAuthenticated);
+  }, [isProviderLoggedIn, currentProvider, userType, isAuthenticated]);
+
+  useEffect(() => {
+    console.log('Current route:', window.location.pathname);
+  }, [window.location.pathname]);
+
+  useEffect(() => {
     if (currentUser?.id) {
       const loadProfile = async () => {
         try {
@@ -94,11 +105,16 @@ function App() {
           />
           <Route path='/register-provider' element={<RegisterProvider/>} />
           <Route 
-            path="/provider" 
+            path="/provider/profile" 
             element={
-              isProviderLoggedIn ? 
-                <ProfileView userData={currentUser} userType={userType} /> : 
-                <Navigate to="/login" />
+              isProviderLoggedIn && currentProvider ? (
+                <ProfileView 
+                  userData={currentProvider} 
+                  userType="provider"
+                />
+              ) : (
+                <Navigate to="/login" replace state={{ from: '/provider/profile' }} />
+              )
             } 
           />
           <Route 
